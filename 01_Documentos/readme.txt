@@ -1,4 +1,4 @@
 Integrantes:
 - Nicole Lara
 - Sebastian Monga
-- Kevin Gómez
+- Kevin Guzman
