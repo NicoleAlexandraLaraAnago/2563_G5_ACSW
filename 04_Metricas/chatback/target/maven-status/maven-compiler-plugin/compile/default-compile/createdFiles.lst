@@ -1,0 +1,6 @@
+com\dailycode\chat_app\WebsocketController.class
+com\dailycode\chat_app\ChatAppApplication.class
+com\dailycode\chat_app\ChatRoom.class
+com\dailycode\chat_app\WebsocketConfig.class
+com\dailycode\chat_app\WebSocketSessionManager.class
+com\dailycode\chat_app\Message.class
