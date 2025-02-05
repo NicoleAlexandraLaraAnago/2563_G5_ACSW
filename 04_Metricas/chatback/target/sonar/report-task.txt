@@ -1,0 +1,6 @@
+projectKey=tallersonarqube
+serverUrl=http://localhost:9000
+serverVersion=25.1.0.102122
+dashboardUrl=http://localhost:9000/dashboard?id=tallersonarqube
+ceTaskId=86b62e4f-fcff-4713-99a5-9b829ae1ad0c
+ceTaskUrl=http://localhost:9000/api/ce/task?id=86b62e4f-fcff-4713-99a5-9b829ae1ad0c
