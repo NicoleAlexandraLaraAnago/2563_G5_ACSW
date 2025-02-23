@@ -1,0 +1,88 @@
+﻿@model IMS_Project.Models.Supplier
+
+@{
+    ViewBag.Title = "Supplier";
+    ViewBag.SubTitle = "Details";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <dl class="dl-horizontal ">
+            <dt>
+                <label>ID:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SupplierID)
+            </dd>
+            <dt>
+                <label>Nombre:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CompanyName)
+            </dd>
+
+            <dt>
+                <label>Nombre Contacto:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ContactName)
+            </dd>
+
+            <dt>
+                <label>Cargo:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ContactTitle)
+            </dd>
+
+            <dt>
+                <label>Celular:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Mobile)
+            </dd>
+
+
+
+            <dt>
+                <label>Direccion:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+
+            <dt>
+                <label>Ciudad:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.City)
+            </dd>
+
+            <dt>
+                <label>Pais:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Country)
+            </dd>
+
+
+
+        </dl>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <img src="~/Content/Images/perfil.png" alt="" class="img-thumbnail" width="160" height="160" />
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Volver", "Index")
+</p>

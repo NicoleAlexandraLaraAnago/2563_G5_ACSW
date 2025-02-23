@@ -1,0 +1,133 @@
+﻿@model IMS_Project.Models.Customer
+
+@{
+    ViewBag.Title = "Customer";
+    ViewBag.SubTitle = "Details";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <dl class="dl-horizontal ">
+            <dt>
+                <label>Nombre:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.First_Name)
+            </dd>
+
+            <dt>
+                <label>Apellido:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Last_Name)
+            </dd>
+
+            <dt>
+                <label>Usuario:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt>
+                <label>Contraseña:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt>
+                <label>Edad:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+
+
+
+            <dt>
+                <label>Fecha Nacimiento:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateofBirth)
+            </dd>
+
+
+
+            <dt>
+                <label>Pais:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Country)
+            </dd>
+
+
+
+            <dt>
+                <label>Ciudad:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.City)
+            </dd>
+
+            <dt>
+                <label>Codigo Postal:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PostalCode)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+
+
+
+
+            <dt>
+                <label>Celular:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Mobile1)
+            </dd>
+
+
+
+            <dt>
+                <label>Direccion:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address1)
+            </dd>
+
+
+
+
+
+        </dl>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <img src="~/Content/Images/perfil.png" alt="" class="img-thumbnail" width="160" height="160" />
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,140 @@
+﻿@model IMS_Project.Models.Product
+
+@{
+    ViewBag.Title = "Product";
+    ViewBag.SubTitle = "Details";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <dl class="dl-horizontal ">
+            <dt>
+                <label>Nombre:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+
+
+
+
+            <dt>
+                <label>Precio:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UnitPrice)
+            </dd>
+
+
+
+
+
+
+
+            <dt>
+                <label>Talla:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Size)
+            </dd>
+
+
+
+            <dt>
+                <label>Stock:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UnitInStock)
+            </dd>
+
+
+
+
+
+            <dt>
+                <label>URL Imagen:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ImageURL)
+            </dd>
+
+            <dt>
+                <label>Texto:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AltText)
+            </dd>
+
+
+
+            <dt>
+                <label>Titulo para Oferta:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OfferTitle)
+            </dd>
+
+
+
+            <dt>
+                <label>Descripcion corta:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ShortDescription)
+            </dd>
+
+            <dt>
+                <label>Descripcion Larga:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LongDescription)
+            </dd>
+
+
+
+            <dt>
+                <label>Categoria:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Category.Name)
+            </dd>
+
+            <dt>
+                <label>Sub-categoria:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.SubCategory.Name)
+            </dd>
+
+            <dt>
+                <label>Proveedor:</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Supplier.CompanyName)
+            </dd>
+
+
+        </dl>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <img src="~/Content/Images/perfil.png" alt="" class="img-thumbnail" width="160" height="160" />
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Volver", "Index")
+</p>

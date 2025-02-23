@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<!-- Cart view section -->
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-login">
+                                <h4>Login</h4>
+                               
+                            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "aa-login-form" }))
+                                {
+                                    <label for="">Usuario o Email<span>*</span></label>
+                                    <input name="UserName" type="text" required placeholder="Usuario">
+                                    <label for="">Contraseña<span>*</span></label>
+                                    <input name="Password" type="password" required placeholder="Contraseña">
+                                    <button type="submit" class="aa-browse-btn">Login</button>
+                                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Recuerdame </label>
+                                    <p class="aa-lost-password"><a href="#">Olvido su contraseña?</a></p>
+                            }
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>Register</h4>
+
+                                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "aa-login-form" }))
+                                {
+                                    <label for="">Nombre<span>*</span></label>
+                                    <input name="First_Name" type="text" placeholder="Ingrese su nombre">
+
+                                    <label for="">Apellido<span>*</span></label>
+                                    <input name="Last_Name" type="text" placeholder="Ingrese su apellido">
+
+                                    <label for="">Usuario<span>*</span></label>
+                                    <input name="UserName" type="text" placeholder="Username">
+
+                                    <label for="">Contraseña<span>*</span></label>
+                                    <input name="Password" type="password" placeholder="Contraseña">
+
+                                    <label for="">Email<span>*</span></label>
+                                    <input name="Email" type="text" placeholder="Ingrese su email">
+
+                                    <label for="">Celular<span>*</span></label>
+                                    <input name="Mobile1" type="text" placeholder="Celular">
+
+                                    <label for="">Direccion<span></span></label>
+                                    <input name="Address1" type="text" placeholder="Direccion">
+
+                                    <button type="submit" class="aa-browse-btn">Registrarse</button>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->

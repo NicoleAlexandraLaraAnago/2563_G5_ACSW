@@ -1,0 +1,1678 @@
+[
+    {
+        "keyword": "Feature",
+        "name": "Probar calidad y formalizar contratos con proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Probar la calidad de productos o servicios",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor con productos o servicios",
+                        "match": {
+                            "location": "features/steps/steps.py:98",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 4
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema prueba la calidad de los productos o servicios",
+                        "match": {
+                            "location": "features/steps/steps.py:102",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 5
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe verificar que la calidad cumple con los est\u00e1ndares",
+                        "match": {
+                            "location": "features/steps/steps.py:106",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    }
+                ],
+                "line": 3,
+                "uri": "features/calidad_contratos.feature",
+                "description": "",
+                "id": 1
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Formalizar los t\u00e9rminos y condiciones",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor aprobada",
+                        "match": {
+                            "location": "features/steps/steps.py:110",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 9
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema formaliza los t\u00e9rminos y condiciones",
+                        "match": {
+                            "location": "features/steps/steps.py:114",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 10
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe generar un acuerdo con los t\u00e9rminos y condiciones",
+                        "match": {
+                            "location": "features/steps/steps.py:118",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    }
+                ],
+                "line": 8,
+                "uri": "features/calidad_contratos.feature",
+                "description": "",
+                "id": 2
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Revisar, ajustar y formalizar el contrato",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un acuerdo con t\u00e9rminos y condiciones",
+                        "match": {
+                            "location": "features/steps/steps.py:122",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 14
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema revisa y ajusta el contrato",
+                        "match": {
+                            "location": "features/steps/steps.py:126",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 15
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe formalizar el contrato con el proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:130",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 16
+                    }
+                ],
+                "line": 13,
+                "uri": "features/calidad_contratos.feature",
+                "description": "",
+                "id": 3
+            }
+        ],
+        "line": 1,
+        "uri": "features/calidad_contratos.feature",
+        "description": "",
+        "id": 0
+    },
+    {
+        "keyword": "Feature",
+        "name": "CRUD de Clientes",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Crear un nuevo cliente",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un nuevo cliente con nombre \"Cliente A\" y correo \"cliente@example.com\"",
+                        "match": {
+                            "location": "features/steps/steps.py:203",
+                            "arguments": [
+                                {
+                                    "value": "Cliente A",
+                                    "name": "nombre"
+                                },
+                                {
+                                    "value": "cliente@example.com",
+                                    "name": "correo"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema registra el cliente",
+                        "match": {
+                            "location": "features/steps/steps.py:207",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 7
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el cliente debe ser guardado en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:213",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 8
+                    }
+                ],
+                "line": 5,
+                "uri": "features/crud_clientes.feature",
+                "description": "",
+                "id": 2
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Leer informaci\u00f3n de un cliente",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un cliente con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:217",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta la informaci\u00f3n del cliente",
+                        "match": {
+                            "location": "features/steps/steps.py:222",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 12
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar la informaci\u00f3n del cliente",
+                        "match": {
+                            "location": "features/steps/steps.py:226",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 13
+                    }
+                ],
+                "line": 10,
+                "uri": "features/crud_clientes.feature",
+                "description": "",
+                "id": 3
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Actualizar informaci\u00f3n de un cliente",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un cliente con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:217",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 16
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema actualiza el correo del cliente a \"nuevo_correo@example.com\"",
+                        "match": {
+                            "location": "features/steps/steps.py:230",
+                            "arguments": [
+                                {
+                                    "value": "nuevo_correo@example.com",
+                                    "name": "nuevo_correo"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 17
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la informaci\u00f3n del cliente debe ser actualizada en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:234",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 18
+                    }
+                ],
+                "line": 15,
+                "uri": "features/crud_clientes.feature",
+                "description": "",
+                "id": 4
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Eliminar un cliente",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un cliente con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:217",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 21
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema elimina el cliente",
+                        "match": {
+                            "location": "features/steps/steps.py:238",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 22
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el cliente debe ser eliminado de la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:242",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.008279800415039062
+                        },
+                        "line": 23
+                    }
+                ],
+                "line": 20,
+                "uri": "features/crud_clientes.feature",
+                "description": "",
+                "id": 5
+            }
+        ],
+        "line": 3,
+        "uri": "features/crud_clientes.feature",
+        "description": "",
+        "id": 1
+    },
+    {
+        "keyword": "Feature",
+        "name": "CRUD de Compras",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Crear una nueva compra",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una nueva compra con proveedor ID 1, producto ID 1 y cantidad 10",
+                        "match": {
+                            "location": "features/steps/steps.py:291",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "proveedor_id",
+                                    "original": "1"
+                                },
+                                {
+                                    "value": 1,
+                                    "name": "producto_id",
+                                    "original": "1"
+                                },
+                                {
+                                    "value": 10,
+                                    "name": "cantidad",
+                                    "original": "10"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema registra la compra",
+                        "match": {
+                            "location": "features/steps/steps.py:295",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 7
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la compra debe ser guardada en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:301",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 8
+                    }
+                ],
+                "line": 5,
+                "uri": "features/crud_compras.feature",
+                "description": "",
+                "id": 3
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Leer informaci\u00f3n de una compra",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una compra con ID 1 registrada en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:305",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta la informaci\u00f3n de la compra",
+                        "match": {
+                            "location": "features/steps/steps.py:310",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0010037422180175781
+                        },
+                        "line": 12
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar la informaci\u00f3n de la compra",
+                        "match": {
+                            "location": "features/steps/steps.py:314",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 13
+                    }
+                ],
+                "line": 10,
+                "uri": "features/crud_compras.feature",
+                "description": "",
+                "id": 4
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Actualizar informaci\u00f3n de una compra",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una compra con ID 1 registrada en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:305",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 16
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema actualiza la cantidad de la compra a 15",
+                        "match": {
+                            "location": "features/steps/steps.py:318",
+                            "arguments": [
+                                {
+                                    "value": 15,
+                                    "name": "nueva_cantidad",
+                                    "original": "15"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 17
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la informaci\u00f3n de la compra debe ser actualizada en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:322",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 18
+                    }
+                ],
+                "line": 15,
+                "uri": "features/crud_compras.feature",
+                "description": "",
+                "id": 5
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Eliminar una compra",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una compra con ID 1 registrada en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:305",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 21
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema elimina la compra",
+                        "match": {
+                            "location": "features/steps/steps.py:326",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 22
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la compra debe ser eliminada de la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:330",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 23
+                    }
+                ],
+                "line": 20,
+                "uri": "features/crud_compras.feature",
+                "description": "",
+                "id": 6
+            }
+        ],
+        "line": 3,
+        "uri": "features/crud_compras.feature",
+        "description": "",
+        "id": 2
+    },
+    {
+        "keyword": "Feature",
+        "name": "CRUD de Productos",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Crear un nuevo producto",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un nuevo producto con nombre \"Producto A\" y precio 100",
+                        "match": {
+                            "location": "features/steps/steps.py:247",
+                            "arguments": [
+                                {
+                                    "value": "Producto A",
+                                    "name": "nombre"
+                                },
+                                {
+                                    "value": 100,
+                                    "name": "precio",
+                                    "original": "100"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema registra el producto",
+                        "match": {
+                            "location": "features/steps/steps.py:251",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 7
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el producto debe ser guardado en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:257",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 8
+                    }
+                ],
+                "line": 5,
+                "uri": "features/crud_productos.feature",
+                "description": "",
+                "id": 4
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Leer informaci\u00f3n de un producto",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un producto con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:261",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta la informaci\u00f3n del producto",
+                        "match": {
+                            "location": "features/steps/steps.py:266",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 12
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar la informaci\u00f3n del producto",
+                        "match": {
+                            "location": "features/steps/steps.py:270",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 13
+                    }
+                ],
+                "line": 10,
+                "uri": "features/crud_productos.feature",
+                "description": "",
+                "id": 5
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Actualizar informaci\u00f3n de un producto",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un producto con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:261",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 16
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema actualiza el precio del producto a 150",
+                        "match": {
+                            "location": "features/steps/steps.py:274",
+                            "arguments": [
+                                {
+                                    "value": 150,
+                                    "name": "nuevo_precio",
+                                    "original": "150"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 17
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la informaci\u00f3n del producto debe ser actualizada en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:278",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 18
+                    }
+                ],
+                "line": 15,
+                "uri": "features/crud_productos.feature",
+                "description": "",
+                "id": 6
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Eliminar un producto",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un producto con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:261",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 21
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema elimina el producto",
+                        "match": {
+                            "location": "features/steps/steps.py:282",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 22
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el producto debe ser eliminado de la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:286",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 23
+                    }
+                ],
+                "line": 20,
+                "uri": "features/crud_productos.feature",
+                "description": "",
+                "id": 7
+            }
+        ],
+        "line": 3,
+        "uri": "features/crud_productos.feature",
+        "description": "",
+        "id": 3
+    },
+    {
+        "keyword": "Feature",
+        "name": "CRUD de Proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Crear un nuevo proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un nuevo proveedor con nombre \"Proveedor A\" y contacto \"contacto@proveedora.com\"",
+                        "match": {
+                            "location": "features/steps/steps.py:159",
+                            "arguments": [
+                                {
+                                    "value": "Proveedor A",
+                                    "name": "nombre"
+                                },
+                                {
+                                    "value": "contacto@proveedora.com",
+                                    "name": "contacto"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema registra el proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:163",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 7
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el proveedor debe ser guardado en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:169",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 8
+                    }
+                ],
+                "line": 5,
+                "uri": "features/crud_proveedores.feature",
+                "description": "",
+                "id": 5
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Leer informaci\u00f3n de un proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un proveedor con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:173",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta la informaci\u00f3n del proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:178",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 12
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar la informaci\u00f3n del proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:182",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 13
+                    }
+                ],
+                "line": 10,
+                "uri": "features/crud_proveedores.feature",
+                "description": "",
+                "id": 6
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Actualizar informaci\u00f3n de un proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un proveedor con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:173",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 16
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema actualiza el contacto del proveedor a \"nuevo_contacto@proveedora.com\"",
+                        "match": {
+                            "location": "features/steps/steps.py:186",
+                            "arguments": [
+                                {
+                                    "value": "nuevo_contacto@proveedora.com",
+                                    "name": "nuevo_contacto"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 17
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la informaci\u00f3n del proveedor debe ser actualizada en la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:190",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 18
+                    }
+                ],
+                "line": 15,
+                "uri": "features/crud_proveedores.feature",
+                "description": "",
+                "id": 7
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Eliminar un proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un proveedor con ID 1 registrado en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:173",
+                            "arguments": [
+                                {
+                                    "value": 1,
+                                    "name": "id",
+                                    "original": "1"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 21
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema elimina el proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:194",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 22
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "el proveedor debe ser eliminado de la base de datos",
+                        "match": {
+                            "location": "features/steps/steps.py:198",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 23
+                    }
+                ],
+                "line": 20,
+                "uri": "features/crud_proveedores.feature",
+                "description": "",
+                "id": 8
+            }
+        ],
+        "line": 3,
+        "uri": "features/crud_proveedores.feature",
+        "description": "",
+        "id": 4
+    },
+    {
+        "keyword": "Feature",
+        "name": "Revisar y validar documentaci\u00f3n de proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Revisar la documentaci\u00f3n preliminar",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud con documentaci\u00f3n completa",
+                        "match": {
+                            "location": "features/steps/steps.py:31",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 4
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema revisa la documentaci\u00f3n preliminar",
+                        "match": {
+                            "location": "features/steps/steps.py:35",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 5
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe verificar que la documentaci\u00f3n est\u00e9 completa",
+                        "match": {
+                            "location": "features/steps/steps.py:39",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    }
+                ],
+                "line": 3,
+                "uri": "features/documentacion.feature",
+                "description": "",
+                "id": 6
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Solicitar documentaci\u00f3n faltante",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud con documentaci\u00f3n incompleta",
+                        "match": {
+                            "location": "features/steps/steps.py:43",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 9
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema identifica la documentaci\u00f3n faltante",
+                        "match": {
+                            "location": "features/steps/steps.py:47",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 10
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe solicitar la documentaci\u00f3n faltante al proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:51",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    }
+                ],
+                "line": 8,
+                "uri": "features/documentacion.feature",
+                "description": "",
+                "id": 7
+            }
+        ],
+        "line": 1,
+        "uri": "features/documentacion.feature",
+        "description": "",
+        "id": 5
+    },
+    {
+        "keyword": "Feature",
+        "name": "Analizar el estado financiero del proveedor",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Analizar el estado financiero del proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor con estado financiero",
+                        "match": {
+                            "location": "features/steps/steps.py:135",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 4
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema analiza el estado financiero del proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:139",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 5
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe verificar que el proveedor es financieramente estable",
+                        "match": {
+                            "location": "features/steps/steps.py:143",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    }
+                ],
+                "line": 3,
+                "uri": "features/estado_financiero.feature",
+                "description": "",
+                "id": 7
+            }
+        ],
+        "line": 1,
+        "uri": "features/estado_financiero.feature",
+        "description": "",
+        "id": 6
+    },
+    {
+        "keyword": "Feature",
+        "name": "Evaluar portafolio y capacidad operativa de proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Evaluar el portafolio del proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor con portafolio",
+                        "match": {
+                            "location": "features/steps/steps.py:73",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 4
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema eval\u00faa el portafolio del proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:77",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 5
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe verificar que el portafolio cumple con los requisitos",
+                        "match": {
+                            "location": "features/steps/steps.py:81",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    }
+                ],
+                "line": 3,
+                "uri": "features/portafolio_capacidad.feature",
+                "description": "",
+                "id": 8
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Revisar la capacidad operativa",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor con capacidad operativa",
+                        "match": {
+                            "location": "features/steps/steps.py:85",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 9
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema revisa la capacidad operativa del proveedor",
+                        "match": {
+                            "location": "features/steps/steps.py:89",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 10
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe verificar que el proveedor tiene la capacidad necesaria",
+                        "match": {
+                            "location": "features/steps/steps.py:93",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    }
+                ],
+                "line": 8,
+                "uri": "features/portafolio_capacidad.feature",
+                "description": "",
+                "id": 9
+            }
+        ],
+        "line": 1,
+        "uri": "features/portafolio_capacidad.feature",
+        "description": "",
+        "id": 7
+    },
+    {
+        "keyword": "Feature",
+        "name": "Receptar y gestionar solicitudes de proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Receptar una solicitud de proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un proveedor env\u00eda una solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:6",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema recibe la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:10",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 7
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la solicitud debe ser registrada en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:14",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 8
+                    }
+                ],
+                "line": 5,
+                "uri": "features/proveedores.feature",
+                "description": "",
+                "id": 9
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Revisar el estado de una solicitud",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor registrada",
+                        "match": {
+                            "location": "features/steps/steps.py:18",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0051250457763671875
+                        },
+                        "line": 11
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta el estado de la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:22",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 12
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar el estado actual de la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:26",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 13
+                    }
+                ],
+                "line": 10,
+                "uri": "features/proveedores.feature",
+                "description": "",
+                "id": 10
+            }
+        ],
+        "line": 3,
+        "uri": "features/proveedores.feature",
+        "description": "",
+        "id": 8
+    },
+    {
+        "keyword": "Feature",
+        "name": "Receptar y gestionar solicitudes de proveedores",
+        "tags": [],
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Receptar una solicitud de proveedor",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "un proveedor env\u00eda una solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:6",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 4
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema recibe la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:10",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 5
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "la solicitud debe ser registrada en el sistema",
+                        "match": {
+                            "location": "features/steps/steps.py:14",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 6
+                    }
+                ],
+                "line": 3,
+                "uri": "features/solicitaciones_proveedores.feature",
+                "description": "",
+                "id": 10
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Revisar el estado de una solicitud",
+                "tags": [],
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "name": "una solicitud de proveedor registrada",
+                        "match": {
+                            "location": "features/steps/steps.py:18",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 9
+                    },
+                    {
+                        "keyword": "When",
+                        "name": "el sistema consulta el estado de la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:22",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 10
+                    },
+                    {
+                        "keyword": "Then",
+                        "name": "se debe mostrar el estado actual de la solicitud",
+                        "match": {
+                            "location": "features/steps/steps.py:26",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        },
+                        "line": 11
+                    }
+                ],
+                "line": 8,
+                "uri": "features/solicitaciones_proveedores.feature",
+                "description": "",
+                "id": 11
+            }
+        ],
+        "line": 1,
+        "uri": "features/solicitaciones_proveedores.feature",
+        "description": "",
+        "id": 9
+    }
+]
